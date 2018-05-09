@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TXViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5UT-7R-w9W">
+                    <rect key="frame" x="0.0" y="120" width="375" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="End-pr-F5W"/>
+                    </constraints>
+                    <state key="normal" title="朋友圈根据给出的CustomView自动布局图片"/>
+                    <connections>
+                        <action selector="firstButtonAtcion:" destination="-1" eventType="touchUpInside" id="fRE-7e-AYW"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UXT-mp-ADi">
+                    <rect key="frame" x="0.0" y="240" width="375" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="XpG-E1-KHD"/>
+                    </constraints>
+                    <state key="normal" title="朋友圈根据自定义Customimagesize布局CustomView"/>
+                    <connections>
+                        <action selector="secondButtonAction:" destination="-1" eventType="touchUpInside" id="X3y-cS-M3s"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dLY-W6-QlG">
+                    <rect key="frame" x="0.0" y="360" width="375" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="Ha6-UY-kn8"/>
+                    </constraints>
+                    <state key="normal" title="图片组show模式，可展示描述文字"/>
+                    <connections>
+                        <action selector="showImageArray:" destination="-1" eventType="touchUpInside" id="UPk-nq-aDP"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="5UT-7R-w9W" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="2E3-xF-qLL"/>
+                <constraint firstItem="UXT-mp-ADi" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="G3H-5o-rJb"/>
+                <constraint firstItem="UXT-mp-ADi" firstAttribute="top" secondItem="5UT-7R-w9W" secondAttribute="bottom" constant="60" id="Hlc-26-Mnm"/>
+                <constraint firstItem="dLY-W6-QlG" firstAttribute="top" secondItem="UXT-mp-ADi" secondAttribute="bottom" constant="60" id="LrJ-QW-XFW"/>
+                <constraint firstItem="5UT-7R-w9W" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="Qi6-3N-ttI"/>
+                <constraint firstItem="5UT-7R-w9W" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="100" id="cRi-C5-DIB"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="UXT-mp-ADi" secondAttribute="trailing" id="dXb-oU-2MG"/>
+                <constraint firstItem="dLY-W6-QlG" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="nYt-6H-w0Q"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="dLY-W6-QlG" secondAttribute="trailing" id="wEm-bj-fv0"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="24.5" y="52.5"/>
+        </view>
+    </objects>
+</document>

@@ -1,5 +1,6 @@
 先直接上完成后的效果如下：
-![2018-05-09 11_44_04.gif](https://upload-images.jianshu.io/upload_images/9610720-b696a47329973937.gif?imageMogr2/auto-orient/strip)
+![2018-05-10 20_01_08.gif](https://upload-images.jianshu.io/upload_images/9610720-8107b45cc902b231.gif?imageMogr2/auto-orient/strip)
+
 
 ##### 具体的demo 详见github地址：https://github.com/TianXin123654/TXCustomView
 
